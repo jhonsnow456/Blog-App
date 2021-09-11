@@ -22,8 +22,14 @@ mongoose
     useCreateIndex: true,
     useFindAndModify:true
   })
-  .then(console.log("Connected to MongoDB"))
+  .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
+
+
+app.get('/', (req, res) => {
+  res.send('Hello, server is up and running...')
+});
+
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
