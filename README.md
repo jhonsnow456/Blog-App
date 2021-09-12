@@ -18,6 +18,7 @@ The project is classifed into segregate branch so that the project could be easi
 - react
 - react-router-dom
 - react-dom
+- axios
 
 ### Server Side Dependency:
 - bcrypt
